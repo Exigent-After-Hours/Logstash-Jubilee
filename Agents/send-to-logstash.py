@@ -16,6 +16,7 @@ class send_log:
         try:
             self.spider = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         except Exception as e:
+            print (e)
             sys.exit(1)
             
     def logstash_connect(self):
